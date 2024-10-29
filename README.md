@@ -1,3 +1,5 @@
+## Contents
+
 This repository contains docker images useful for QAIC devices.  They expect
 that the Platform SDK (at least the driver and firmware) is installed on
 the host.
@@ -7,7 +9,8 @@ Associated versions and pull commands are there.
 
 The images contained are:
 
-cloud_ai_inference_ubuntu22:
+- cloud_ai_inference_ubuntu22:
+  
   This image is useful for performing inferences and working with models.
   It's able to compile models for, and execute models on AIC100 cards.
   It contains the Apps SDK, Platform SDK, and various python-based tools
