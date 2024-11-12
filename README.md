@@ -22,4 +22,5 @@ The images contained are:
 These container images are licensed under the terms in the [LICENSE](LICENSE) file.
 By pulling and using these containers, you accept the terms and conditions of this license.
 
-
+These container images contain open source and other components that are governed by their
+own licensing terms.  Refer to those individual components for their licensing terms.
