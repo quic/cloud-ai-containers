@@ -17,6 +17,13 @@ The images contained are:
   useful for working with and compiling models and executing inferences.
   It's based on ubuntu22.
 
+- cloud_ai_k8s_device_plugin:
+  
+  This image works as a Kubernetes device plugin and provides access to
+  Qualcomm Cloud AI devices via Kubernetes.  Full documentation of how to
+  use this image, how to reserve devices, and what devices are available is
+  part of the apps SDK and associated documentation.
+
 
 ## License
 These container images are licensed under the terms in the [LICENSE](LICENSE) file.
