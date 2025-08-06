@@ -17,6 +17,19 @@ The images contained are:
   useful for working with and compiling models and executing inferences.
   It's based on ubuntu22.
 
+- cloud_ai_inference_ubuntu24:
+  
+  This image is useful for performing inferences and working with models.
+  It's able to compile models for, and execute models on AIC100 cards.
+  It contains the Apps SDK, Platform SDK, and various python-based tools
+  useful for working with and compiling models and executing inferences.
+  It's based on ubuntu24.
+
+- cloud_ai_triton_server:
+  
+  This image is similar to the inference images, but also contains the
+  Triton Inference Server.
+
 - cloud_ai_k8s_device_plugin:
   
   This image works as a Kubernetes device plugin and provides access to
