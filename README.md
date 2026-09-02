@@ -40,11 +40,6 @@ The images contained are:
   vllm v0.8.5 installed.
   Entrypoint: /bin/bash
 
-- cloud_ai_inference_rh_ubi9_vllm_py312_tgis:
-  This image is similar to cloud_ai_inference_rh_ubi9_vllm_tgis, but the
-  vllm environment is based on Python 3.12, suitable for gpt-oss.
-  Entrypoint: /bin/bash
-
 - cloud_ai_inference_ubuntu22:
   This image is useful for performing inferences and working with models.
   It's able to compile models for, and execute models on AIC100 cards.
@@ -71,11 +66,6 @@ The images contained are:
   and a vllm entrypoint defined.
   Entrypoint: python3 -m vllm.entrypoints.openai.api_server
 
-- cloud_ai_inference_vllm_py312:
-  This image is similar to cloud_ai_inference_vllm, but the vllm environment
-  is based on Python 3.12, suitable for gpt-oss.
-  Entrypoint: python3 -m vllm.entrypoints.openai.api_server
-
 - cloud_ai_inference_vllm_disagg:
   This image is similar to cloud_ai_inference_vllm, but with a qaic-disagg
   entrypoint defined.
@@ -86,10 +76,12 @@ The images contained are:
   entrypoint defined.
   Entrypoint: python3 -m qaic_disagg
 
-- cloud_ai_inference_vllm_py312_disagg:
-  This image is similar to cloud_ai_inference_vllm_py312, but with a qaic-disagg
-  entrypoint defined.
-  Entrypoint: python3 -m qaic_disagg
+- cloud_ai_inference_vllm_qaic_pyt:
+  This image is useful for performing inferences and working with models.
+  It's able to compile models for, and execute models on AIC100 cards.
+  It contains vLLM and PyTorch in eager mode.
+  It contains the Apps SDK, Platform SDK, and is based on Ubuntu 24.04.
+  Entrypoint: python3 -m vllm.entrypoints.openai.api_server
 
 - cloud_ai_k8s_device_plugin:
   This is a kubernetes device plugin for AIC100 cards.
